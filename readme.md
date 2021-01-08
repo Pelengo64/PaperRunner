@@ -1,4 +1,4 @@
-# PaperRunner
+# Paper Runner
 
 Author: Konrad Love | 
 Date: 08/01/2021 | 
