@@ -1,0 +1,7 @@
+package uk.DavDev.PrinterGame.Main;
+
+import java.awt.Canvas;
+
+public class Window extends Canvas{
+
+}

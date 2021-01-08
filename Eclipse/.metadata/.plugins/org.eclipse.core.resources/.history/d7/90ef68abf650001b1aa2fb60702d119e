@@ -1,0 +1,23 @@
+package uk.DavDev.PrinterGame.Main;
+
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+
+public class KeyInput extends KeyAdapter implements MouseListner{
+	
+	public void keyPressed(KeyEvent e) {
+		int key = e.getKeyCode();
+		
+		System.out.println(key);
+	}
+	public void keyReleased(KeyEvent e) {
+		
+	}
+    @Override
+    public void mouseClicked(MouseEvent arg0) { 
+       //Put the code you want here
+       //...
+       //...
+     }
+}

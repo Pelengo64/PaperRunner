@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\Receipt Printer Game\.metadata\.plugins\org.eclipse.jdt.core
+2425928565.index
+2939529116.index

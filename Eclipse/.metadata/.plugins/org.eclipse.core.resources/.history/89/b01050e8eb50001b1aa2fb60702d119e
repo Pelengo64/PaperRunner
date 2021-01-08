@@ -1,0 +1,13 @@
+package uk.DavDev.PrinterGame.Main;
+
+import java.awt.Canvas;
+
+public class Window extends Canvas{
+
+	private static final long serialVersionUID = -8527858875632009872L;
+	
+	public Window(int width, int height, String title) {
+		
+	}
+	
+}

@@ -1,0 +1,62 @@
+package uk.DavDev.PrinterGame.Main;
+
+import java.awt.Canvas;
+import java.awt.Dimension;
+import java.awt.Rectangle;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+
+public class Window extends Canvas{
+
+	public Rectangle startButton = new Rectangle(245, 300, 395, 295);
+	private static final long serialVersionUID = -8527858875632009872L;
+	
+	public Window(int width, int height, String title, Game game) {
+		this.addKeyListener(new KeyInput());
+		PrinterService printerService=new PrinterService();
+		JFrame frame = new JFrame(title);
+		JButton start=new JButton("Start");
+		final JComboBox<String> cb = new JComboBox<String>((String[]) printerService.getPrinters().toArray(new String[0]));
+		cb.setBounds(95, 100, 445, 50);
+		frame.setPreferredSize(new Dimension(width,height));
+		frame.setMaximumSize(new Dimension(width,height));
+		frame.setMinimumSize(new Dimension(width,height));
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
+		
+		start.setBounds(245, 300, 150, 50);
+		
+		frame.add(cb);
+		frame.addMouseListener(this);
+		frame.add(start);
+		frame.add(game);
+		
+		frame.setFocusable(true);
+		frame.setVisible(true);
+		start.addActionListener(new ActionListener() {
+			
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				start.setVisible(false);
+				cb.setVisible(false);
+				Game.printer=(String) cb.getSelectedItem();
+				
+				frame.requestFocusInWindow();
+				
+				game.start();
+				
+			}
+		});
+		
+
+	}
+}
