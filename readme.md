@@ -4,7 +4,7 @@ Author: Konrad Love
 Date: 08/01/2021
 Language: Java
 
-~~~~~~~~~~~~~~~~~~~~~~~~PaperRunner~~~~~~~~~~~~~~~~~~~~~~~~~~
+## Information
 
 I am a beginner at Java, I have only been doing it for several months, so this is not an advanced game, it is more just a proof of concept. 
 
