@@ -1,7 +1,7 @@
 # PaperRunner
 
-Author: Konrad Love
-Date: 08/01/2021
+Author: Konrad Love | 
+Date: 08/01/2021 | 
 Language: Java
 
 ## Information
