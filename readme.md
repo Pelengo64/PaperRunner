@@ -1,6 +1,6 @@
 # Paper Runner
 
-Author: Konrad Love | 
+Author: Pelengo | 
 Date: 08/01/2021 | 
 Language: Java
 
